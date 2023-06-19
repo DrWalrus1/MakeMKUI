@@ -1,0 +1,5 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8cac1546_002Dcb05_002D45ac_002Db8b3_002D649dde34f31b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="MakeMKVLib Unit Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="F:\repos\MakeMKVUI\MakeMKVLib.Tests" Presentation="&amp;lt;MakeMKVLib.Tests&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/UnloadedProject/UnloadedProjects/=9ebe5e09_002Da26d_002D4e01_002Dab86_002D4e7bcb7987c8_0023MakeMKVUI/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
