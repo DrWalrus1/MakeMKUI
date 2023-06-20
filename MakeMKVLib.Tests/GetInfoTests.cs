@@ -1,4 +1,6 @@
 using MakeMKVLib.Models;
+using MakeMKVLib.Models.MakeMKV;
+using DriveInfo = MakeMKVLib.Models.DriveInfo;
 
 namespace MakeMKVLib.Tests;
 
@@ -8,10 +10,10 @@ public class GetInfoTests
     public void SuccessfullyGetDriveName()
     {
         // Arrange
-        IMakeMkv makeMkv = new BaseMakeMkv();
+        MakeMkvDrive drive = new MakeMkvDrive(0);
         
         //Act
-        DriveInfo info = makeMkv.ReadDrive(0);
+        DriveInfo info = drive.ReadInfo();
         
         //Assert
         Assert.Equal("ASUS 4K Blu-ray Player", info.driveName);
@@ -21,10 +23,10 @@ public class GetInfoTests
     public void SuccessfullyGetDiskInfo()
     {
         // Arrange
-        IMakeMkv makeMkv = new BaseMakeMkv();
+        MakeMkvDrive drive = new MakeMkvDrive(0);
         
         //Act
-        DiskInfo info = makeMkv.ReadDrive(0);
+        DiskInfo info = drive.ReadDiskInfo();
         
         //Assert
         Assert.Equal("Get Out", info.diskName);
