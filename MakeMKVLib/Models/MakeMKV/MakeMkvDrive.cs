@@ -1,8 +1,10 @@
-﻿using MakeMKVLib.Models.Sources;
+﻿using System;
+using System.IO;
+using MakeMKVLib.Models.Sources;
 
 namespace MakeMKVLib.Models.MakeMKV;
 
-public class MakeMkvDrive : BaseMakeMkv<Drive, DriveInfo>
+public class MakeMkvDrive : BaseMakeMkv<Drive>
 {
 
     private int sourceId;
@@ -14,7 +16,7 @@ public class MakeMkvDrive : BaseMakeMkv<Drive, DriveInfo>
         this.sourceId = sourceId;
     }
 
-    public override DriveInfo ReadInfo()
+    public DriveInfo ReadInfo()
     {
         return new DriveInfo("ASUS 4K Blu-ray Player");
     }

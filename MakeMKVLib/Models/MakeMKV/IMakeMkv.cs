@@ -1,6 +1,6 @@
 ﻿namespace MakeMKVLib.Models;
 
-public interface IMakeMkv<T, W> where T : Source where W : SourceInfo
+public interface IMakeMkv<T> where T : Source
 {
-    W ReadInfo();
+
 }

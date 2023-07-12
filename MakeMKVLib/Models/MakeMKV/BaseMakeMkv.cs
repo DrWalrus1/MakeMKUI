@@ -2,10 +2,9 @@
 
 namespace MakeMKVLib.Models;
 
-public abstract class BaseMakeMkv<T, W> : IMakeMkv<T, W> where T : Source where W : SourceInfo
+public abstract class BaseMakeMkv<T> : IMakeMkv<T> where T : Source
 {
     protected int sourceId;
     public T source;
-
-    public abstract W ReadInfo();
+    
 }
