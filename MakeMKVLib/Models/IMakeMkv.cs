@@ -2,5 +2,5 @@
 
 public interface IMakeMkv
 {
-    DiskInfo ReadDrive(int driveNumber);
+    DriveInfo ReadDrive(int driveNumber);
 }

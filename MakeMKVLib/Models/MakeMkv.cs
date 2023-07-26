@@ -2,8 +2,8 @@
 
 public class MakeMkv : IMakeMkv 
 {
-    public DiskInfo ReadDrive(int driveNumber)
+    public DriveInfo ReadDrive(int driveNumber)
     {
-        return new DiskInfo("Get Out");
+        throw new NotImplementedException();
     }
 }
